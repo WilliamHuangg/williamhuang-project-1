@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Hello!</title>
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>  
+  <body>
+    <h1>Color & Sound Memory Game</h1>
+    
+    <p>
+      Hello There! Welcome to the Game!
+    </p>
+    
+    <button id="startBtn" onclick="startGame()">
+      Start
+    </button>
+    
+    <button id="stopBtn" class="hidden" onclick="stopGame()">
+      Stop
+    </button>
+
+    <div id="gameButtonArea">
+      <button id="button1" onclick="guess(1)" onmousedown="audiofunctionPLAY(1)" onmouseup="audiofunctionSTOP(1)">1</button>
+      <button id="button2" onclick="guess(2)" onmousedown="audiofunctionPLAY(2)" onmouseup="audiofunctionSTOP(2)">2</button>
+      <button id="button3" onclick="guess(3)" onmousedown="audiofunctionPLAY(3)" onmouseup="audiofunctionSTOP(3)">3</button>
+      <button id="button4" onclick="guess(4)" onmousedown="audiofunctionPLAY(4)" onmouseup="audiofunctionSTOP(4)">4</button>
+      <button id="button5" onclick="guess(5)" onmousedown="audiofunctionPLAY(5)" onmouseup="audiofunctionSTOP(5)">5</button>
+    </div>
+
+    
+    <audio src="https://cdn.glitch.com/ba51f234-9a59-42fe-bb31-9a8b58e39b44%2Fbeatk01-80-01-audio1.wav?v=1616638544695" id="audio1"></audio>
+    <audio src="https://cdn.glitch.com/ba51f234-9a59-42fe-bb31-9a8b58e39b44%2Fchepik01-80a-01-audio2.wav?v=1616638544706" id="audio2"></audio>
+    <audio src="https://cdn.glitch.com/ba51f234-9a59-42fe-bb31-9a8b58e39b44%2Fchepik01-80a-04-audio3.wav?v=1616638544761" id="audio3"></audio>
+    <audio src="https://cdn.glitch.com/ba51f234-9a59-42fe-bb31-9a8b58e39b44%2Fdubperck03-70-05-audio4.wav?v=1616638544785" id="audio4"></audio>
+    <audio src="https://cdn.glitch.com/ba51f234-9a59-42fe-bb31-9a8b58e39b44%2Felecpik04-75e-01-audio5.wav?v=1616638544831" id="audio5"></audio>
+
+    
+<!--     <button onmousedown="audiofunctionPLAY(1)" onmouseup="audiofunctionSTOP(1)">Play Audio1</button>
+    <button onmousedown="audiofunctionPLAY(2)" onmouseup="audiofunctionSTOP(2)">Play Audio2</button>
+    <button onmousedown="audiofunctionPLAY(3)" onmouseup="audiofunctionSTOP(3)">Play Audio3</button>
+    <button onmousedown="audiofunctionPLAY(4)" onmouseup="audiofunctionSTOP(4)">Play Audio4</button>
+    <button onmousedown="audiofunctionPLAY(5)" onmouseup="audiofunctionSTOP(5)">Play Audio5</button> -->
+    
+  </body>
+</html>
